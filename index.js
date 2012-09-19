@@ -52,3 +52,15 @@ exports.values = function(obj){
 exports.length = function(obj){
   return exports.keys(obj).length;
 };
+
+/**
+ * Check if `obj` is empty.
+ *
+ * @param {Object} obj
+ * @return {Boolean}
+ * @api public
+ */
+
+exports.isEmpty = function(obj){
+  return 0 == exports.length(obj);
+};

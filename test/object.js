@@ -25,3 +25,10 @@ describe('.length(obj)', function(){
     object.length(obj).should.equal(2);
   })
 })
+
+describe('.isEmpty()', function(){
+  it('should check if the object is empty', function(){
+    object.isEmpty({}).should.be.true;
+    object.isEmpty({ foo: 'bar' }).should.be.false;
+  })
+})

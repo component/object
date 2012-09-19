@@ -11,37 +11,22 @@ is.date(obj);
 ```
 
 ## API
-   - [.keys(obj)](#keysobj)
-   - [.values(obj)](#valuesobj)
-   - [.length(obj)](#lengthobj)
-<a name="" />
- 
-<a name="keysobj" />
+
 ### .keys(obj)
-should return the keys of an object.
 
-```js
-var obj = { name: 'tobi', age: 1 };
-object.keys(obj).should.eql(['name', 'age']);
-```
+  Return the keys for `obj`.
 
-<a name="valuesobj" />
 ### .values(obj)
-should return the values of an object.
 
-```js
-var obj = { name: 'tobi', age: 1 };
-object.values(obj).should.eql(['tobi', 1]);
-```
+  Return the values for `obj`.
 
-<a name="lengthobj" />
 ### .length(obj)
-should return key count.
 
-```js
-var obj = { name: 'tobi', age: 1 };
-object.length(obj).should.equal(2);
-```
+  Return the number of keys for `obj`.
+
+### .isEmpty(obj)
+
+  Check if `obj` is empty.
 
 ## License
 
