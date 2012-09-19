@@ -42,6 +42,20 @@ exports.values = function(obj){
 };
 
 /**
+ * Merge `b` into `a`.
+ *
+ * @param {Object} a
+ * @param {Object} b
+ * @return {Object} a
+ * @api public
+ */
+
+exports.merge = function(a, b){
+  for (var key in b) a[key] = b[key];
+  return a;
+};
+
+/**
  * Return length of `obj`.
  *
  * @param {Object} obj

@@ -26,6 +26,20 @@ describe('.length(obj)', function(){
   })
 })
 
+describe('.merge(a, b)', function(){
+  it('should merge two objects', function(){
+    var a = { foo: 'bar' };
+    var b = { bar: 'baz' };
+    object.merge(a, b).should.eql({ foo: 'bar', bar: 'baz' });
+  })
+
+  it('should give precedence to b', function(){
+    var a = { foo: 'bar' };
+    var b = { foo: 'baz' };
+    object.merge(a, b).should.eql({ foo: 'baz' });
+  })
+})
+
 describe('.isEmpty()', function(){
   it('should check if the object is empty', function(){
     object.isEmpty({}).should.be.true;

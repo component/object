@@ -28,6 +28,11 @@ is.date(obj);
 
   Check if `obj` is empty.
 
+### .merge(a, b)
+
+  Merge object `b` into `a`, returns `a`.
+  Precedence is given to `b`.
+
 ## License
 
   MIT
