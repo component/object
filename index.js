@@ -1,6 +1,6 @@
 
 /**
- * HAP ref.
+ * HOP ref.
  */
 
 var has = Object.prototype.hasOwnProperty;
