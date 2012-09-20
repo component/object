@@ -1,14 +1,7 @@
 
 # object
 
-  Object keys / values / length.
-
-## Example
-
-```js
-var is = require('is');
-is.date(obj);
-```
+  Object utils.
 
 ## API
 
