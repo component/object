@@ -82,3 +82,37 @@ exports.length = function(obj){
 exports.isEmpty = function(obj){
   return 0 == exports.length(obj);
 };
+
+/**
+ * Return specified value
+ *
+ * @param {Object} obj
+ * @param {Number} i
+ * @api public
+ */
+
+exports.get = function(obj, i){
+  return obj[exports.keys(obj)[i]];
+};
+
+/**
+ * Return first value
+ *
+ * @param {Object} obj
+ * @api public
+ */
+
+exports.first = function(obj){
+  return exports.get(obj, 0);
+};
+
+/**
+ * Return last value
+ *
+ * @param {Object} obj
+ * @api public
+ */
+
+exports.last = function(obj){
+  return exports.get(obj, exports.length(obj) - 1);
+};

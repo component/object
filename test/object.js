@@ -46,3 +46,25 @@ describe('.isEmpty()', function(){
     object.isEmpty({ foo: 'bar' }).should.be.false;
   })
 })
+
+describe('.get(obj, i)', function(){
+  it('should return specified value', function(){
+    var obj = { name: 'tobi', age: 1 };
+    object.get(obj, 0).should.equal('tobi');
+    object.get(obj, 1).should.equal(1);
+  })
+})
+
+describe('.first(obj)', function(){
+  it('should return first value', function(){
+    var obj = { name: 'tobi', age: 1 };
+    object.first(obj).should.equal('tobi');
+  })
+})
+
+describe('.last(obj)', function(){
+  it('should return last value', function(){
+    var obj = { name: 'tobi', age: 1 };
+    object.last(obj).should.equal(1);
+  })
+})
