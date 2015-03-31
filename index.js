@@ -84,10 +84,11 @@ exports.isEmpty = function(obj){
 };
 
 /**
- * Return specified value
+ * Return specified value of `obj`
  *
  * @param {Object} obj
  * @param {Number} i
+ * @return {Mixed}
  * @api public
  */
 
@@ -96,9 +97,10 @@ exports.get = function(obj, i){
 };
 
 /**
- * Return first value
+ * Return first value of `obj`
  *
  * @param {Object} obj
+ * @return {Mixed}
  * @api public
  */
 
@@ -107,9 +109,10 @@ exports.first = function(obj){
 };
 
 /**
- * Return last value
+ * Return last value of `obj`
  *
  * @param {Object} obj
+ * @return {Mixed}
  * @api public
  */
 
