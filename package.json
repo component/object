@@ -12,6 +12,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/component/object.git"
-  }
+    "url": "git+https://github.com/component/object.git"
+  },
+  "description": "Object utils.",
+  "main": "index.js",
+  "license": "MIT"
 }
